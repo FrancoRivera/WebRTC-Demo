@@ -11,7 +11,7 @@ var fileServer = new(nodeStatic.Server)();
 var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
 }).listen(8089);
-
+console.log("Servicio escuchando en localhost:8089")
 //var io = socketIO.listen(app, { path: '/socket/socket.io'} );
 var io = socketIO.listen(app);
 //io.path('/socket/socket.io')
