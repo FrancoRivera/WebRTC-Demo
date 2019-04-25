@@ -112,7 +112,7 @@ var room = 'foo';
 // Could prompt for room name:
 // room = prompt('Enter room name:');
 //var socket = io('https://app.arulearning.com/', {path: '/socket/socket.io/'})
-var socket = io('https://app.arulearning.com/').connect();
+var socket = io('localhost:8089').connect();
 
 
 if (room !== '') {
